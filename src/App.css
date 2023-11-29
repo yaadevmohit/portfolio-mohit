@@ -4,3 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+
+.main-container {
+  border: solid 8px var(--black);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+}
