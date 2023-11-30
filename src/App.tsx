@@ -5,11 +5,13 @@ import Hero from './components/Hero'
 
 function App() {
   return (
-    <div className='main-container'>
-      <NavBar />
-      <Hero />
+    <>
+      <div className='main-container'>
+        <NavBar />
+        <Hero />
+      </div>
       <Footer/>
-    </div>
+    </>
   )
 }
 

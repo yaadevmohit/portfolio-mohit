@@ -9,4 +9,24 @@
   border: solid 8px var(--black);
   border-radius: 12px;
   padding: 1rem 2rem;
+  width: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    border: none;
+  }
+
+
+
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    font-size: 14px;
+  }
 }
