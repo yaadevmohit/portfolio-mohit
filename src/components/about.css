@@ -90,6 +90,18 @@
 
 @media only screen and (max-width: 800px) {
     
+    .about-section {
+        grid-template-areas: "profile-photo heading"
+                             "about-text about-text";
+    }
+
+    .about-section > img {
+        margin: 0;
+        margin-bottom: 1.2rem;
+        padding: 0;
+        
+    }
+
     .about-heading {
         text-align: center;
         align-self: center;

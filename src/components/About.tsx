@@ -6,6 +6,7 @@ const About = () => {
             <div className="about-section">
                 <img src="src/assets/mohit.png" width={400}/>
                 <h1 className="about-heading title">
+                    {/* do the align right */}
                     <span>Software developer</span>
                     <br />Mohit yadav
                     <hr />
