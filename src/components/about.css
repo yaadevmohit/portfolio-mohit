@@ -22,7 +22,8 @@
     max-width: 100%;
     grid-area: profile-photo;
     align-self: center;
-
+    border-radius: 100%;
+    margin-block: 0.5rem;
 }
 
 .about-heading {
@@ -97,7 +98,6 @@
     }
 
     .about-section > img {
-        margin: 0;
         margin-bottom: 1.2rem;
         padding: 0;
         width: 60%;
