@@ -14,11 +14,12 @@ nav {
     padding-bottom: 1rem;
 }
 
-h2 {
+.profile-header > h2 {
     font-weight: 300;
     letter-spacing: 0.3rem;
     margin: 0;
     font-size: 2rem;
+    text-align: center;
 }
 
 
