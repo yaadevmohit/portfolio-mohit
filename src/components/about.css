@@ -24,7 +24,8 @@
     align-self: center;
     border-radius: 100%;
     margin-block: 0.5rem;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url("/mohit-compressed.jpg");
 }
 
 .about-heading {
