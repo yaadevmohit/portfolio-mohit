@@ -4,7 +4,7 @@ const About = () => {
     return (
         <>
             <div className="about-section">
-                <img src="assets/mohit_yadav.jpg" width={400}/>
+                <img src="/assets/mohit_yadav.jpg" width={400}/>
                 <h1 className="about-heading title">
                     Mohit yadav<br />
                     <span>Software developer</span>
