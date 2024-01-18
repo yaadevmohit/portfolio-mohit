@@ -15,6 +15,7 @@
     display: grid;
     grid-template-areas: "profile-photo heading"
                          "profile-photo about-text";
+    padding: 1rem;
 }
 
 .about-section > img {
@@ -24,8 +25,7 @@
     align-self: center;
     border-radius: 100%;
     margin-block: 0.5rem;
-    /* background-color: aliceblue; */
-    background-image: url("/mohit-compressed.jpg");
+    background-image: url("/image.png");
 }
 
 .about-heading {
@@ -54,6 +54,7 @@
     grid-area: about-text;
     text-align: left;
     text-wrap: pretty;
+    color: black;
 }
 
 .about-text, .about-heading {
@@ -108,7 +109,6 @@
 
     .about-heading {
         text-align: center;
-        /* align-self: center; */
         margin-top: 0;
     }
   }
@@ -119,9 +119,15 @@
         grid-template-areas: "profile-photo"
                              "heading"
                              "about-text";
+        color: black;
     }
     .about-section > img {
         width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
   }

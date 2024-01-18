@@ -2,22 +2,19 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  /* text-align: center; */
-
+  --clr-black: #3c3c3c;
 }
 
 .main-container {
-  border: solid 8px var(--black);
-  border-radius: 12px;
   padding: 1rem 2rem;
   width: auto;
   transition: all ease-in-out 0.3s;
+  color: var(--clr-black);
 }
 
 
 @media only screen and (max-width: 600px) {
   .main-container {
-    border: none;
     padding: 0;
   }
 

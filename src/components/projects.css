@@ -1,0 +1,11 @@
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    margin-block: 1rem;
+    /* max-width: 1200px; */
+    margin: 0;
+    justify-content: center;
+}
+.projects > * {
+    margin: 1rem;
+}

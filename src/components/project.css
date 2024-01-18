@@ -1,0 +1,53 @@
+
+
+.project {
+    display: flex;
+    flex-flow: column;
+    max-width: 20.5rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: -0.5rem 0.5rem;
+}
+
+.project > img {
+    border-radius: 1.2rem;
+}
+
+.project-description > * {
+    margin: 0;
+}
+
+.project > * {
+    margin-block-end: 0.8rem;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skills > span {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+}
+
+span.react {
+    background-color: teal;
+}
+
+span.javascript {
+    background-color: orangered;
+}
+
+span.tailwind {
+    background-color: rgb(254, 119, 0);
+}
+
+span.python {
+    background-color: rgb(219, 126, 3);
+}

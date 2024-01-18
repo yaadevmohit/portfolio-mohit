@@ -1,11 +1,17 @@
+:root {
+    --clr-black: #3c3c3c;
+}
+
 footer {
+    position: static;
+    bottom: 1rem;
     display: flex;
     justify-content: center;
 }
 
 footer > a {
     margin-inline: 0.5rem;
-    color: var(--black)
+    color: var(--clr-black)
 }
 
 footer > a:hover {
