@@ -1,6 +1,12 @@
 import "./project.css"
 
-const Project = ({projectName, projectImage, projectInfo}) => {
+interface ProjectProps {
+    projectName: string
+    projectImage: string
+    projectInfo: string
+}
+
+const Project = ({projectName, projectImage, projectInfo}: ProjectProps) => {
     return (
         <div className="project">
             <img src={`/projects_img/${projectImage}.png`} alt="project"/>

@@ -1,12 +1,9 @@
-import Project from "./project"
+import Project from "./Project"
 import "./projects.css"
 const Projects = () => {
     return(
         <div className="projects">
-                <Project projectName="Library App "projectImage={"pr-1"}/>
-                <Project projectName="Library App "projectImage={"pr-1"}/>
-                <Project projectName="Library App "projectImage={"pr-1"}/>
-                <Project projectName="Library App "projectImage={"pr-1"}/>
+                <Project projectName="Library App "projectImage={"pr-1"} projectInfo={"no info provided"}/>
         </div>
     )
 }
