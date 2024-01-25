@@ -12,7 +12,6 @@ function App() {
       <div className='main-container'>
         <Routes>
           <Route path='/' element={<About />} />
-          <Route path="/work" element={<Projects/>}/>
           <Route path='/projects' element={<Projects />}/>
         </Routes>
       </div>
