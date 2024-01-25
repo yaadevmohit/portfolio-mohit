@@ -4,17 +4,19 @@ interface ProjectProps {
     projectName: string
     projectImage: string
     projectInfo: string
+    skills: string[]
 }
 
-const Project = ({projectName, projectImage, projectInfo}: ProjectProps) => {
+const Project = ({projectName, projectImage, projectInfo, skills}: ProjectProps) => {
     return (
         <div className="project">
-            <img src={`/projects_img/${projectImage}.png`} alt="project"/>
+            <img src={projectImage} alt={`${projectName} screenshot image`}/>
             <div className="skills">
-                <span className="react">React</span>
-                <span className="javascript">JavaScript</span>
-                <span className="tailwind">Tailwind</span>
-                <span className="python">Python</span>
+                {skills.map((skill) => {
+                    return (
+                        <span className={skill.toLowerCase()}>{skill}</span>
+                    )
+                })}
             </div>
             <div className="project-description">
                 <h2>{projectName}</h2>

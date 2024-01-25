@@ -37,17 +37,33 @@
 }
 
 span.react {
-    background-color: teal;
+    background: linear-gradient(to right, teal, orangered);
+    /* background-color: teal; */
 }
 
 span.javascript {
-    background-color: orangered;
+    background: linear-gradient(to right, orangered, rgb(82, 31, 88));
+    /* background-color: orangered; */
 }
 
 span.tailwind {
-    background-color: rgb(254, 119, 0);
+    background: linear-gradient(to right, rgb(254, 119, 0), rgb(46, 56, 1));
+    /* background-color: rgb(254, 119, 0); */
 }
 
 span.python {
+    background: linear-gradient(to right, rgb(46, 56, 1), rgb(12, 164, 9));
     background-color: rgb(219, 126, 3);
+}
+
+span.html {
+    background: linear-gradient(to right, #790934, #00d4ff);
+}
+
+span.css {
+    background: linear-gradient(to right, #020024, #c1c802);
+}
+
+span.typescript {
+    background: linear-gradient(to right, #220382, #00d4ff);
 }
