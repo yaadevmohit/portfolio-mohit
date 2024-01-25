@@ -30,7 +30,7 @@ export default
             skills: ["HTML", "CSS"]
         },
         {
-            name: "Age-Caclucator",
+            name: "Age Calculator",
             img: ageCalcImg,
             info: "Calculates age based on the enetered input. Used CSS position property and flexbox for the layout. Error handling not implemented yet.",
             skills: ["HTML", "CSS", "JavaScript"]
