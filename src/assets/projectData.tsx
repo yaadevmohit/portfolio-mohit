@@ -14,7 +14,7 @@ export default
         {
             name: "Modern Form",
             img: formImg,
-            info: "Four steps form done as part of frontendmentor challanges. Uses prop drilling to keep connect all the different input states of the form.",
+            info: "Four steps form done as part of frontendmentor challanges. Uses prop drilling to pass data from all the different states of the form.",
             skills: ["React", "JavaScript", "HTML", "CSS"]
         },
         {
@@ -26,13 +26,13 @@ export default
         {
             name: "Dashboard",
             img: dashBoardImg,
-            info: "",
+            info: "Frontendmentor challenge. Uses CSS grid for the layout and avaible with dark and light theme.",
             skills: ["HTML", "CSS"]
         },
         {
             name: "Age-Caclucator",
             img: ageCalcImg,
-            info: "",
+            info: "Calculates age based on the enetered input. Used CSS position property and flexbox for the layout. Error handling not implemented yet.",
             skills: ["HTML", "CSS", "JavaScript"]
         }    
     ]
