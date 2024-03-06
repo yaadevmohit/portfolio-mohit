@@ -14,6 +14,8 @@ const Projects = () => {
                             projectInfo={data.info}
                             projectImage={data.img}
                             skills={data.skills}
+                            github={data.github}
+                            live={data.live}
                         />
                     )
                 })
