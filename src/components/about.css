@@ -5,7 +5,6 @@
 
 .about-section, .image-section {
     font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
-    font-weight: 400;
     border-radius: 12px;
     padding-inline: 1rem;
     margin: 0;
@@ -35,6 +34,7 @@
     grid-area: heading;
     margin: 0;
     align-self: self-end;
+    color: rgb(0, 0, 0);
 }
 
 .about-heading > span {
@@ -57,6 +57,7 @@
     text-wrap: pretty;
     color: black;
     font-weight: 200;
+    line-height: 1.8rem;
 }
 
 .about-text, .about-heading {
@@ -112,6 +113,7 @@
     .about-heading {
         text-align: center;
         margin-top: 0;
+        font-size: 2rem;
     }
   }
 
