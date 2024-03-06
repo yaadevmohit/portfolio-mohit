@@ -1,8 +1,5 @@
-:root {
-    --clr-black: #3c3c3c;
-}
-
 footer {
+    --clr-black: #242020;
     position: static;
     bottom: 1rem;
     display: flex;
@@ -12,7 +9,7 @@ footer {
 
 footer > a {
     margin-inline: 0.5rem;
-    color: var(--clr-black)
+    color: var(--clr-black);
 }
 
 footer > a:hover {
@@ -23,8 +20,6 @@ footer > a:hover {
     footer {
         margin-top: 1rem;
         padding: 1rem 2rem;
-        /* background: rgb(208, 205, 205); */
-        /* position: sticky; */
         border-radius: 4rem;
         bottom: 0;
         width: fit-content;

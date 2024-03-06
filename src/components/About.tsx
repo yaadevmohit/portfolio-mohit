@@ -1,9 +1,10 @@
 import "./about.css"
+import profileImg from "../../public/mohit.png"
 const About = () => {
     return (
         <>
             <div className="about-section">
-                <img src="/mohit.png" width={400} alt="Mohit Yadav"/>
+                <img src={profileImg} width={400} alt="Mohit Yadav profile photo"/>
                 <h1 className="about-heading title">
                     Mohit yadav<br />
                     <span>Software developer</span>
