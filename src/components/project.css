@@ -5,15 +5,14 @@
     flex-flow: column;
     max-width: 20.5rem;
     background-color: white;
-    padding: 0.4rem;
-    padding-bottom: 1.5rem;
+    padding: 0;
     border-radius: 0.5rem;
     box-shadow: -0.5rem 0.5rem;
     position: relative;
 }
 
 .project > img {
-    border-radius: 1.2rem;
+    border-radius: 0.6rem;
     object-fit: cover;
     max-height: 200px;
     overflow: scroll;
@@ -21,6 +20,18 @@
 
 .project-description > * {
     margin: 0;
+}
+
+.project-description {
+    padding: 0.2rem 0.6rem 1rem 0.6rem;
+}
+
+.project-description > h2 {
+    font-weight: 600;
+}
+
+.project-description > p {
+    font-weight: 300;
 }
 
 .project > * {
@@ -79,7 +90,6 @@ span.typescript {
 .project-links {
     display: flex;
     justify-content: center;
-    font-weight: 700;
     width: 100%;
     margin: 0;
     position: absolute;

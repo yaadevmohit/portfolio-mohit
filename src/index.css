@@ -1,6 +1,7 @@
 :root {
-  --body-bg: #e6e7db;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --body-bg: hsl(30.5, 10.9%, 91.3%);
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-weight: 900;
   line-height: 1.5;
   /* font-weight: 400; */
   background-color: var(--body-bg);
