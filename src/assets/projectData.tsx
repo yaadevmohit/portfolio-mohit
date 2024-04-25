@@ -24,7 +24,7 @@ export default
         {
             name: "Hangman",
             img: hangmanImg,
-            info: "Classic hangman game with few letters already guessed to make game slightly easier. ",
+            info: "Classic hangman game with a few letters already guessed to make game slightly easier. ",
             skills: ["React", "TypeScript", "HTML", "CSS"],
             github: "https://github.com/yaadevmohit/hangman",
             live: ""
