@@ -24,6 +24,7 @@ const Project = ({projectName, projectImage, projectInfo, skills, github, live}:
             </div>
             <div className="project-description">
                 <h2>{projectName}</h2>
+                <hr />
                 <p>{projectInfo || "No info"}</p>
             </div>
             <div className="project-links">

@@ -9,6 +9,7 @@
     border-radius: 0.5rem;
     box-shadow: -0.5rem 0.5rem;
     position: relative;
+    --padding-left: 0.6rem;
 }
 
 .project > img {
@@ -23,7 +24,7 @@
 }
 
 .project-description {
-    padding: 0.2rem 0.6rem 1rem 0.6rem;
+    padding: 0.2rem 0.6rem 1.5rem var(--padding-left);
 }
 
 .project-description > h2 {
@@ -41,6 +42,7 @@
 .skills {
     display: flex;
     flex-flow: row wrap;
+    margin-left: 0.2rem;
 }
 
 .skills > span {
@@ -93,7 +95,7 @@ span.typescript {
     width: 100%;
     margin: 0;
     position: absolute;
-    bottom: 0.2rem;
+    bottom: 0.1rem;
 }
 
 .project-links > a > img {
