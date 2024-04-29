@@ -1,5 +1,5 @@
 :root {
-    --about-bg: hsl(390, 70%, 91%);
+    --about-bg: white;
     --about-img-bg: var(--body-bg);
 }
 
@@ -16,7 +16,7 @@
     grid-template-areas: "profile-photo heading"
                          "profile-photo about-text";
     padding: 1rem;
-    border: 4px solid white;
+    border: 4px solid black;
 }
 
 .about-section > img {
@@ -24,7 +24,6 @@
     max-width: 100%;
     grid-area: profile-photo;
     align-self: center;
-    border-radius: 100%;
     margin-block: 0.5rem;
     background-image: url("../../public/mohit-compressed.jpg");
 }
