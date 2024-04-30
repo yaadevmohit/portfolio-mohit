@@ -1,5 +1,6 @@
 :root {
     --about-bg: white;
+    --about-bg-dark: rgb(0, 0, 129);
     --about-img-bg: var(--body-bg);
 }
 
@@ -19,6 +20,8 @@
     border: 4px solid black;
 }
 
+
+
 .about-section > img {
     margin: 0;
     max-width: 100%;
@@ -34,7 +37,6 @@
     grid-area: heading;
     margin: 0;
     align-self: self-end;
-    color: rgb(0, 0, 0);
 }
 
 .about-heading > span {
@@ -56,7 +58,6 @@
     grid-area: about-text;
     text-align: left;
     text-wrap: pretty;
-    color: rgb(0, 0, 0);
     font-weight: 300;
     line-height: 1.8rem;
 }

@@ -11,7 +11,75 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 1rem;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.main-heading {
+    position: absolute;
+}
+
+.toggler {
+    --toggler-bg-light: #feaf00;
+    --toggler-bg-dark: #352f44;
+    --toggler-font-clr-light: #004225;
+    --toggler-font-clr-dark:  #f9eee5;
+
+    --toggler-btn-bg-light: #fecf9d;
+    --toggler-btn-bg-dark: #b9b4c6;
+
+    margin-left: auto;
+    border: 4px solid var(--toggler-font-clr-light);
+    --tgl-height: 40px;
+    width: 140px;
+    height: var(--tgl-height);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 8rem;
+    color: var(--toggler-font-clr-light);
+    padding-inline: 0.2rem;
+}
+
+.toggler > p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.2rem;
+}
+
+
+.toggler.dark {
+    background-color: var(--toggler-bg-dark);
+    color: var(--toggler-font-clr-dark);
+    border-color: var(--toggler-font-clr-dark);
+}
+.toggle-btn.dark {
+    background-color: var(--toggler-btn-bg-dark);
+}
+
+.toggle-btn {
+    background-color: var(--toggler-bg-light);
+    border-radius: 50%;
+    height: calc(var(--tgl-height) - 5px);
+    width: calc(var(--tgl-height) - 5px);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-btn > img {
+    color: #feaf00;
 }
 
 .profile-header > h2 {
@@ -44,4 +112,18 @@ nav {
     text-decoration: underline;
     font-size: 1.5rem;
     color: var(clr-black);
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-header {
+        flex-flow: column-reverse wrap;
+    }
+
+    .main-heading {
+        position: relative;
+    }
+
+    .toggler {
+        margin: 0;
+    }
 }
