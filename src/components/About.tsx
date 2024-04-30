@@ -1,14 +1,14 @@
 import "./about.css"
 import profileImg from "../assets/photo_gallery/mohit.png"
-const About = () => {
+const About = ({darkMode}) => {
     return (
         <>
-            <div className="about-section">
+            <div className={`about-section ${darkMode && "dark"}`}>
                 <img src={profileImg} width={400} alt="Mohit Yadav profile photo"/>
                 <h1 className="about-heading title">
                     Mohit Yadav<br />
                     <span>Software Developer</span>
-                    <hr />
+                    <hr className={darkMode && "dark"}/>
                 </h1>
                 <p className="about-text">
                     Experienced software developer proficient in React, Node.js, and other front-end frameworks.

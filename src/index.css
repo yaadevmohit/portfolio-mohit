@@ -1,9 +1,8 @@
 :root {
-  --body-bg: hsl(30.5, 10.9%, 91.3%);
+  --body-bg: hsl(38, 75%, 94%);
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   font-weight: 900;
   line-height: 1.5;
-  background-color: var(--body-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,5 +13,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--body-bg);
 }
+
 
