@@ -2,6 +2,7 @@
     --toggler-font-clr-dark:  #f9eee5;
     --toggler-btn-bg-dark: #b9b4c6;
     --toggler-btn-bg-light: #fecf9d;
+    transition: all ease-in 0.1s;
 }
 
 header {
@@ -71,9 +72,11 @@ nav {
     flex-direction: row-reverse;
     padding-inline: 0.2rem;
     padding-left: 0.5rem;
+    /* transition: all ease-in 1s; */
 }
 .toggle-btn.dark {
     background-color: var(--toggler-btn-bg-dark);
+    translate: 0px;
 }
 
 .toggle-btn {

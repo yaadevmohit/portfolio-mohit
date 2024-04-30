@@ -7,6 +7,10 @@ footer {
     font-weight: 700;
 }
 
+footer.dark > a {
+    color: var(--toggler-font-clr-dark);
+}
+
 footer > a {
     margin-inline: 0.5rem;
     color: var(--clr-black);

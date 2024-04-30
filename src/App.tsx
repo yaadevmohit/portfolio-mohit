@@ -13,9 +13,9 @@ function App() {
   function toggleDarkMode() {
     setDarkMode(prevMode => !prevMode)
   }
+  {document.body.style.backgroundColor = darkMode ? "#352f44" : "hsl(38, 75%, 94%)"}
   return (
     <>
-    {document.body.style.backgroundColor = darkMode ? "#352f44" : "hsl(38, 75%, 94%)"}
       <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       <div className='main-container'>
         <Routes>
@@ -23,7 +23,7 @@ function App() {
           <Route path='/projects' element={<Projects />}/>
         </Routes>
       </div>
-      <Footer/>
+      <Footer darkMode={darkMode}/>
     </>
   )
 }
