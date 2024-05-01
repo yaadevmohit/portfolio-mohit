@@ -3,11 +3,17 @@ import { Link } from "react-router-dom"
 import lightModeSvg from "../assets/photo_gallery/sun-svgrepo-com.svg"
 import darkModeSvg from  "../assets/photo_gallery/crescent-moon-svgrepo-com.svg"
 
-const NavBar = ({toggleDarkMode, darkMode}) => {
+interface NavBarProps {
+    toggleDarkMode: () => void;
+    darkMode: boolean
+
+}
+
+const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
 
 
     return (
-        <header className={darkMode && "dark"}>
+        <header className={darkMode ? "dark" : ""}>
             <div className="profile-header">
                 <h2 className="main-heading">MOHIT YADAV</h2>
                 <button className={`toggler ${darkMode && "dark"}`} onClick={toggleDarkMode}>

@@ -1,6 +1,8 @@
 import "./about.css"
 import profileImg from "../assets/photo_gallery/mohit.png"
-const About = ({darkMode}) => {
+
+
+const About = ({darkMode}: {darkMode: boolean}) => {
     return (
         <>
             <div className={`about-section ${darkMode && "dark"}`}>
@@ -8,7 +10,7 @@ const About = ({darkMode}) => {
                 <h1 className="about-heading title">
                     Mohit Yadav<br />
                     <span>Software Developer</span>
-                    <hr className={darkMode && "dark"}/>
+                    <hr className={darkMode ? "dark" : ""}/>
                 </h1>
                 <p className="about-text">
                     Experienced software developer proficient in React, Node.js, and other front-end frameworks.
