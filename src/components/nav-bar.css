@@ -1,6 +1,6 @@
 :root {
     --toggler-font-clr-dark:  #f9eee5;
-    --toggler-btn-bg-dark: #b9b4c6;
+    --toggler-btn-bg-dark: #4d3c7d;
     --toggler-btn-bg-light: #fecf9d;
     transition: all ease-in 0.1s;
 }

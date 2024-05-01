@@ -31,6 +31,8 @@
     grid-area: profile-photo;
     align-self: center;
     margin-block: 0.5rem;
+    border-radius: 50%;
+    background-image: url(../../public/mohit-compressed.jpg);
 }
 
 .about-heading {
@@ -41,9 +43,14 @@
     align-self: self-end;
 }
 
+
+
 .about-heading > span {
     color: rgb(0, 63, 158);
     font-weight: 700;
+}
+.about-section.dark > .about-heading > span {
+    color: rgb(16, 27, 37);
 }
 
 .about-heading > hr {

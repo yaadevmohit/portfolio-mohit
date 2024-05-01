@@ -9,11 +9,12 @@ interface ProjectProps {
     skills: string[]
     github: string
     live: string
+    darkMode: boolean
 }
 
-const Project = ({projectName, projectImage, projectInfo, skills, github, live}: ProjectProps) => {
+const Project = ({projectName, projectImage, projectInfo, skills, github, live, darkMode}: ProjectProps) => {
     return (
-        <div className="project">
+        <div className={`project ${darkMode ? "dark" : ""}`}>
             <img src={projectImage} alt={`${projectName} screenshot image`}/>
             <div className="skills">
                 {skills.map((skill) => {

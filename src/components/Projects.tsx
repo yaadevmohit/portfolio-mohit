@@ -3,7 +3,8 @@ import projectsData from "../assets/projectData"
 import "./projects.css"
 
 
-const Projects = () => {
+const Projects = ({darkMode}: {darkMode: boolean}) => {
+
     return(
         <div className="projects">
             {
@@ -16,6 +17,7 @@ const Projects = () => {
                             skills={data.skills}
                             github={data.github}
                             live={data.live}
+                            darkMode={darkMode}
                         />
                     )
                 })

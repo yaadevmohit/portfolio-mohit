@@ -12,6 +12,12 @@
     --padding-left: 0.6rem;
 }
 
+.project.dark {
+    background-color: var(--toggler-btn-bg-dark);
+    box-shadow: -0.5rem 0.5rem var(--toggler-font-clr-dark);
+    color: var(--toggler-font-clr-dark);
+}
+
 .project > img {
     border-radius: 0.6rem;
     object-fit: cover;
