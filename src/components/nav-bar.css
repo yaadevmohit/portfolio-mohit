@@ -1,6 +1,6 @@
 :root {
     --toggler-font-clr-dark:  #f9eee5;
-    --toggler-btn-bg-dark: #4d3c7d;
+    --toggler-btn-bg-dark: #3C2A21;
     --toggler-btn-bg-light: #fecf9d;
     transition: all ease-in 0.1s;
 }
@@ -38,7 +38,6 @@ nav {
 
 .toggler {
     --toggler-bg-light: #feaf00;
-    --toggler-bg-dark: #352f44;
     --toggler-font-clr-light: #004225;
 
     margin-left: auto;
@@ -66,7 +65,6 @@ nav {
 
 
 .toggler.dark {
-    background-color: var(--toggler-bg-dark);
     color: var(--toggler-font-clr-dark);
     border-color: var(--toggler-font-clr-dark);
     flex-direction: row-reverse;

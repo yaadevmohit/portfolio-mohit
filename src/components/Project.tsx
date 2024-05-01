@@ -1,5 +1,5 @@
 import "./project.css"
-import githubImg from "../assets/projects_img/github-mark.png"
+import githubImg from "../assets/projects_img/icons8-github-30.png"
 import liveImg from "../assets/projects_img/live-link.svg"
 
 interface ProjectProps {

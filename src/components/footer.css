@@ -7,17 +7,21 @@ footer {
     font-weight: 700;
 }
 
-footer.dark > a {
-    color: var(--toggler-font-clr-dark);
-}
 
 footer > a {
     margin-inline: 0.5rem;
     color: var(--clr-black);
 }
+footer.dark > a {
+    color: var(--toggler-font-clr-dark);
+}
 
 footer > a:hover {
     color: black;
+}
+
+footer.dark > a:hover {
+    color: rgb(76, 80, 84);
 }
 
 @media only screen and (max-width: 650px) {
