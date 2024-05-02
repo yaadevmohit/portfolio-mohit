@@ -26,12 +26,14 @@ const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
             <div className="profile-header">
                 <h2 className="main-heading">MOHIT YADAV</h2>
                 <button className={`toggler ${darkMode && "dark"}`} onClick={toggleDarkMode}>
-                    <div className={`toggle-btn ${darkMode && "dark"}`}>
+                    <div 
+                        className={`toggle-btn ${darkMode && "dark"} ${showPopup ? "mode-change-popup" : ""}`}
+                        onClick={toggleMode} 
+                    >
+                        {/* i've to add one pop in and disappear and other one pop out */}
                         <img 
                             src={darkMode ? darkModeSvg : lightModeSvg} 
-                            className={showPopup ? "mode-change-popup" : ""}
-                            alt="" 
-                            onClick={toggleMode} 
+                            alt=""
                         />
                     </div>
                     <p>{darkMode ? "Dark " : "Light "}mode</p>
