@@ -21,8 +21,6 @@ const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
                     <p>{darkMode ? "Dark " : "Light "}mode</p>
                 </button>
             </div>
-            <div>
-            </div>
             <nav>
                 <Link className="nav-item" to="/projects">projects</ Link>
                 <Link className="nav-item" to="/">about</ Link>
