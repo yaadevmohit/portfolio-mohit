@@ -2,6 +2,7 @@ import "./nav-bar.css"
 import { Link } from "react-router-dom"
 import lightModeSvg from "../assets/photo_gallery/sun-svgrepo-com.svg"
 import darkModeSvg from  "../assets/photo_gallery/crescent-moon-svgrepo-com.svg"
+import { useState } from "react";
 
 interface NavBarProps {
     toggleDarkMode: () => void;
@@ -10,14 +11,29 @@ interface NavBarProps {
 }
 
 const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
+    const [showPopup, setShowPopup] = useState(false);
 
+    const toggleMode = () => {
+      setShowPopup(true);
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 700); // Wait for the animation to complete (0.5s)
+    };
+  
 
     return (
         <header className={darkMode ? "dark" : ""}>
             <div className="profile-header">
                 <h2 className="main-heading">MOHIT YADAV</h2>
                 <button className={`toggler ${darkMode && "dark"}`} onClick={toggleDarkMode}>
-                    <div className={`toggle-btn ${darkMode && "dark"}`}><img src={darkMode ? darkModeSvg : lightModeSvg} alt="" /></div>
+                    <div className={`toggle-btn ${darkMode && "dark"}`}>
+                        <img 
+                            src={darkMode ? darkModeSvg : lightModeSvg} 
+                            className={showPopup ? "mode-change-popup" : ""}
+                            alt="" 
+                            onClick={toggleMode} 
+                        />
+                    </div>
                     <p>{darkMode ? "Dark " : "Light "}mode</p>
                 </button>
             </div>

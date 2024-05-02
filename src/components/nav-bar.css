@@ -92,6 +92,7 @@ nav {
     color: #feaf00;
 }
 
+
 .profile-header > h2 {
     font-weight: 300;
     letter-spacing: 0.3rem;
@@ -144,5 +145,24 @@ nav {
     }
     nav {
         justify-content: flex-start;
+    }
+
+    .mode-change-popup {
+        animation: modeChangePopup 0.7s ease;
+      }
+      
+    @keyframes modeChangePopup {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+      }
     }
 }
