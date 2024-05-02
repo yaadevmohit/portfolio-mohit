@@ -1,6 +1,8 @@
 import "./project.css"
-import githubImg from "../assets/projects_img/icons8-github-30.png"
+import githubImg from "../assets/projects_img/github-mark.svg"
 import liveImg from "../assets/projects_img/live-link.svg"
+import darkGithubImg from "../assets/projects_img/github-mark-dark.svg"
+import darkLiveImg from "../assets/projects_img/live-link-dark.svg"
 
 interface ProjectProps {
     projectName: string
@@ -29,8 +31,8 @@ const Project = ({projectName, projectImage, projectInfo, skills, github, live, 
                 <p>{projectInfo || "No info"}</p>
             </div>
             <div className="project-links">
-                <a href={github} target="_blank"><img src={githubImg} alt="" /></a>
-                {live && <a href={live} target="_blank"><img src={liveImg} alt="" /></a>}
+                <a href={github} target="_blank"><img src={darkMode ? darkGithubImg : githubImg} alt="" /></a>
+                {live && <a href={live} target="_blank"><img src={darkMode ? darkLiveImg : liveImg} alt="" /></a>}
             </div>
         </div>
     )

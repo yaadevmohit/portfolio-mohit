@@ -22,7 +22,6 @@
     border-radius: 0.6rem;
     object-fit: cover;
     max-height: 200px;
-    overflow: scroll;
 }
 
 .project-description > * {
@@ -112,6 +111,7 @@ span.typescript {
     height: 1.4rem;
     animation: ease-out 1s;
 }
+
 
 .project-links > a > img:hover {
     height: 1.6rem;
