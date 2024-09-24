@@ -1,8 +1,22 @@
 import "./about.css"
 import profileImg from "../assets/photo_gallery/mohit.png"
+import gsap from 'gsap';
+import { useGSAP } from "@gsap/react";
 
 
 const About = ({darkMode}: {darkMode: boolean}) => {
+
+    useGSAP(() => {
+        gsap.to(".about-heading", {
+            delay: 1,
+            opacity: 1,
+        }),
+        gsap.to(".about-text", {
+            delay: 2,
+            opacity: 1,
+        })
+    }, [])
+
     return (
         <>
             <div className={`about-section ${darkMode && "dark"}`}>

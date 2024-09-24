@@ -31,8 +31,7 @@
     grid-area: profile-photo;
     align-self: center;
     margin-block: 0.5rem;
-    border-radius: 50%;
-    background-image: url(../../public/mohit-compressed.jpg);
+    aspect-ratio: 1 / 1 ;
 }
 
 .about-heading {
@@ -41,6 +40,7 @@
     grid-area: heading;
     margin: 0;
     align-self: self-end;
+    opacity: 0;
 }
 
 
@@ -73,6 +73,7 @@ hr.dark {
     text-wrap: pretty;
     font-weight: 300;
     line-height: 1.8rem;
+    opacity: 0;
 }
 
 .about-text, .about-heading {

@@ -3,6 +3,11 @@ import { Link } from "react-router-dom"
 import lightModeSvg from "../assets/photo_gallery/sun-svgrepo-com.svg"
 import darkModeSvg from  "../assets/photo_gallery/crescent-moon-svgrepo-com.svg"
 import { useState } from "react";
+import gsap from 'gsap';
+import { useGSAP } from "@gsap/react";
+import { TextPlugin } from 'gsap/TextPlugin';
+
+gsap.registerPlugin(TextPlugin)
 
 interface NavBarProps {
     toggleDarkMode: () => void;
@@ -13,6 +18,20 @@ interface NavBarProps {
 const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
     const [showPopup, setShowPopup] = useState(false);
 
+    useGSAP(() => {
+        gsap.to("#projects", {
+            duration: 1,
+            text: "projects",
+            ease: 'elastic.inOut'
+        }),
+        gsap.to("#about", {
+            delay: 0.1,
+            duration: 1.8,
+            text: "about",
+            ease: 'elastic.inOut'
+        })
+        
+    }, [])
     const toggleMode = () => {
       setShowPopup(true);
       setTimeout(() => {
@@ -40,8 +59,8 @@ const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
                 </button>
             </div>
             <nav>
-                <Link className="nav-item" to="/projects">projects</ Link>
-                <Link className="nav-item" to="/">about</ Link>
+                <Link className="nav-item" id="projects" to="/projects">p</ Link>
+                <Link className="nav-item" id="about" to="/">a</ Link>
             </nav>
         </header>
     )
