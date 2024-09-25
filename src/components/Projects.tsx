@@ -1,5 +1,5 @@
 import Project from "./Project"
-import projectsData from "../assets/projectData"
+import projectsData from "../assets/constants/projectData"
 import "./projects.css"
 
 

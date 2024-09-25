@@ -1,5 +1,5 @@
-import libraryImg from "./projects_img/pr-1.png"
-import formImg from "./projects_img/pr-2.png"
+import libraryImg from "../projects_img/pr-1.png"
+import formImg from "../projects_img/pr-2.png"
 export default 
     [
         {

@@ -45,7 +45,7 @@ nav {
     margin-left: auto;
     border: 4px solid var(--toggler-font-clr-light);
     --tgl-height: 40px;
-    width: 135px;
+    width: 150px;
     height: var(--tgl-height);
     background-color: transparent;
     display: flex;

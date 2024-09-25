@@ -29,6 +29,12 @@ const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
             duration: 1.8,
             text: "about",
             ease: 'elastic.inOut'
+        }),
+        gsap.to("#animation", {
+            delay: 0.3,
+            duration: 1.8,
+            text: "animations",
+            ease: 'elastic.inOut'
         })
         
     }, [])
@@ -59,8 +65,9 @@ const NavBar = ({toggleDarkMode, darkMode}: NavBarProps) => {
                 </button>
             </div>
             <nav>
-                <Link className="nav-item" id="projects" to="/projects">p</ Link>
-                <Link className="nav-item" id="about" to="/">a</ Link>
+                <Link className="nav-item" id="projects" to="/projects">pr</ Link>
+                <Link className="nav-item" id="animation" to="/animations">an</ Link>
+                <Link className="nav-item" id="about" to="/">ab</ Link>
             </nav>
         </header>
     )

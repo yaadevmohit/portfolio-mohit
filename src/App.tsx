@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Projects from './components/Projects'
 import About from './components/About'
 import { useState } from 'react'
+import Animations from './components/Animations'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<About darkMode={darkMode}/>} />
           <Route path='/projects' element={<Projects darkMode={darkMode}/>}/>
+          <Route path="/animations" element={<Animations />}/>
         </Routes>
       </div>
       <Footer darkMode={darkMode}/>
