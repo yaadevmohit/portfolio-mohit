@@ -14,7 +14,7 @@ function App() {
   function toggleDarkMode() {
     setDarkMode(prevMode => !prevMode)
   }
-  {document.body.style.backgroundColor = darkMode ? "#1A120B" : "hsl(38, 75%, 94%)"}
+  {document.body.style.backgroundColor = darkMode ? "#1A120B" : "white"}
   return (
     <>
       <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>

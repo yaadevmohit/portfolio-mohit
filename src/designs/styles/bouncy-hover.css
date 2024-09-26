@@ -1,7 +1,17 @@
+.wrapper {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #FFD23F;
+}
+
+
 .link {
     position: relative;
+    height: 100%;
+    align-self: center;
+    margin-inline: 1rem;
     font-size: 2rem;
-    color: darkcyan;
+    color: #337357;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -14,8 +24,7 @@
         width: 1.8em;
         height: 1.8em;
         border-radius: 1.8em;
-        background-color: rgb(231, 68, 96);
-        
+        background-color: #EE4266;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

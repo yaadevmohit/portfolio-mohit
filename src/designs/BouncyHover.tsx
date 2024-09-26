@@ -41,11 +41,11 @@ const BouncyHover = () => {
     });
   return (
     <div className="wrapper">
-        <a href="" className="link" ref={linkRef}>
-            <div className="pink" ref={pinkRef}></div>
-            <span>Hover here</span>
-            <IonIcon icon={arrowForwardOutline} className="icon-arrow"/>
-        </a>
+            <a className="link" ref={linkRef}>
+                <div className="pink" ref={pinkRef}></div>
+                <span>Hover here</span>
+                <IonIcon icon={arrowForwardOutline} className="icon-arrow"/>
+            </a>
     </div>
   )
 }
