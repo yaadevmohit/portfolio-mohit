@@ -1,5 +1,5 @@
 import BouncyHover from "../designs/BouncyHover"
-import BouncyNavBar from "../designs/BouncyNavBar"
+// import BouncyNavBar from "../designs/BouncyNavBar"
 const Animations = () => {
   // component using tailwind
   return (
@@ -10,7 +10,7 @@ const Animations = () => {
         </div>
         <div className="flex justify-center items-center gap-8 flex-wrap">
             <BouncyHover />
-            <BouncyNavBar />
+            {/* <BouncyNavBar /> */}
         </div>
     </div>
   )
