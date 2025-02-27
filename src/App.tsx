@@ -6,6 +6,7 @@ import './App.css'
 // import About from './components/About'
 // import { useState } from 'react'
 // import Animations from './components/Animations'
+import cucksImg from "./assets/photo_gallery/cucks.jpg"
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
           <Route path="/animations" element={<Animations />}/>
         </Routes> */}
         <h1>#ballin 😎</h1>
-        <span>Hello cuck</span>
+        <img src={cucksImg} width={400} alt="Mohit Yadav profile photo"/>
       </div>
       {/* <Footer darkMode={darkMode}/> */}
     </>
