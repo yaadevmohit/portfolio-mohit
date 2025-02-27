@@ -25,7 +25,7 @@ function App() {
           <Route path="/animations" element={<Animations />}/>
         </Routes> */}
         <h1>#ballin 😎</h1>
-        <span>big things coming up god (bill gates) is kind</span>
+        <span>Hello cuck</span>
       </div>
       {/* <Footer darkMode={darkMode}/> */}
     </>
