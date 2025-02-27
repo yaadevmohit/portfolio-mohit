@@ -53,3 +53,19 @@ body {
     font-size: 14px;
   }
 }
+
+/* temporary */
+h1 {
+  margin-block: auto;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  text-align: center;
+}
